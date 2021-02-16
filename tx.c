@@ -80,4 +80,3 @@ static void basicMACDataPktSend(uint16_t dest_nwk_addr, uint8_t *payload, uint8_
 	memcpy(basicMACDataPkt.payload, payload, payload_length);
 	NETSTACK_RADIO.send((uint8_t *)(&(basicMACDataPkt)), BASIC_MAC_HEADER_SIZE + payload_length);
 }
-
